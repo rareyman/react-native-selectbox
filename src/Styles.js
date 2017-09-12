@@ -16,36 +16,39 @@ export default StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,0.7)'
   },
 
+//  ISM: Moved top up 50 px
   optionContainer: {
     borderRadius: BORDER_RADIUS,
     width: width * 0.8,
     height: OPTION_CONTAINER_HEIGHT,
     backgroundColor: 'rgba(255,255,255,0.8)',
     left: width * 0.1,
-    top: (height - OPTION_CONTAINER_HEIGHT) / 2
+    top: ((height - OPTION_CONTAINER_HEIGHT) / 2) - 50
   },
 
   optionContainerInnerContainer: {
     paddingHorizontal: 10
   },
 
+//  ISM: Moved top up 50 px
   promptContainer: {
     left: width * 0.1,
-    top: ((height - OPTION_CONTAINER_HEIGHT) / 2) - 10
+    top: ((height - OPTION_CONTAINER_HEIGHT) / 2) - 60
   },
 
+//  ISM: Moved top up 50 px
   cancelContainer: {
     left: width * 0.1,
-    top: ((height - OPTION_CONTAINER_HEIGHT) / 2) + 10
+    top: ((height - OPTION_CONTAINER_HEIGHT) / 2) - 40
   },
 
+//  ISM: Removed flex:1, was causing labels to not render
   selectStyle: {
-    flex: 1,
     padding: 8,
   },
 
+//  ISM: Removed flex:1, was causing labels to not render
   selectContainerStyle: {
-    flex: 1,
     flexDirection: 'row',
     alignItems: 'center'
   },
